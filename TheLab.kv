@@ -1,0 +1,38 @@
+WidgetsExample:
+
+<WidgetsExample>:
+    cols: 3
+    Button:
+        text: "Click here"
+        on_press: root.on_button_click()
+    Label:
+        text: root.my_text
+
+<BoxLayoutExample>:
+    orientation: "vertical"
+    Button:
+        text: "A"
+        size_hint: .5, .2
+    BoxLayout:    
+        Button:
+            text: "B1"
+            size_hint: .5, .2
+        Button:
+            text: "B2"
+            size_hint: .5, .2
+    Button:
+        text: "C"
+        
+
+<MainWidget>:
+    Button:
+        text: "Hello"
+        size: "40dp", "10dp"
+        pos: "10dp", "40dp"
+        color: 1, 1, 0, 1
+
+    Label:
+        text: "World"
+        size: "40dp", "10dp"
+        pos: "10dp", "0dp"
+        color: 1, 1, 0, 1
